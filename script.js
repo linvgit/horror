@@ -22,10 +22,18 @@ async function login() {
     alert('❌ Σφάλμα σύνδεσης: ' + error.message);
     return;
   }
+    // ✅ Παίξε μουσική μετά το login
+  const music = document.getElementById('bg-music');
+  music.play().catch((err) => {
+    console.warn("🔇 Ο browser μπλόκαρε το autoplay:", err);
+  });
+  
     alert('✅ Επιτυχής σύνδεση!');
+    
   showStoryForUser(data.user);
 
 }
+
 
 // Εμφάνιση ιστορίας
 function showStoryForUser(user) {
