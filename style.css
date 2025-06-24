@@ -1,0 +1,131 @@
+body {
+  background-image: url('images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Εδώ ξεκινάει το css για το login window */
+#auth-container {  
+  font-family: 'Jacquard 12', cursive;
+  max-width: 400px;         /* Περιορίζει το πλάτος */
+  margin: 50px auto;        /* Κεντράρει το container οριζόντια και δίνει πάνω-κάτω περιθώριο */
+  padding: 20px;            /* Εσωτερικό padding για να μην κολλάνε τα πεδία στις άκρες */
+  background-color: #222;   /* Σκούρο φόντο για ατμόσφαιρα */
+  border-radius: 8px;       /* Στρογγυλεμένες γωνίες */
+  color: #eee;              /* Ανοιχτό χρώμα για το κείμενο */
+  display: flex;            /* Ενεργοποιούμε flexbox για εύκολη διάταξη */
+  flex-direction: column;   /* Τα στοιχεία στοιχίζονται κάθετα */
+  align-items: center;      /* Κεντράρει οριζόντια τα παιδιά */
+  gap: 15px;                /* Κενά ανάμεσα στα στοιχεία */
+  box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Ελαφριά σκιά για βάθος */
+}
+
+#auth-container h2 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  color: #f44336;  /* Μπορείς να βάλεις κόκκινο για πιο τρομακτικό vibe */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+#auth-container input,
+#auth-container button {
+  background-color: #413535;
+  color: #c5b2b2;
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+
+#auth-container button {
+  background-color: #4b0500;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#auth-container button:hover {
+  background-color: #d32f2f;
+}
+/* Εδώ τελειώνει το css για το login box  */
+
+/* Εδώ ξεκινάει το css για το json αρχειο  */
+#story-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #f44336;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  margin-bottom: 1em;
+}
+
+#story-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+
+#choices button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1em;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#choices button:hover {
+  background-color: #333;
+  transform: scale(1.02);
+}
+
+#story-container button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4b0500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  max-width: 200px;
+  text-align: center;
+}
+
+#story-container button:hover {
+  background-color: #d32f2f;
+}
+

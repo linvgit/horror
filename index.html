@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Διαδραστική Ιστορία</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="auth-container">
+    <h2>Καλωσόρισες</h2>
+    <div>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Κωδικός" />
+      <button id="login-button">Σύνδεση</button>
+      <p>Δεν έχεις λογαριασμό; <a href="signup.html">Εγγραφή εδώ</a></p>
+    </div>
+  </div>
+
+  <main id="story-container" style="display: none;">
+    <h1 id="story-title"></h1>
+    <div id="story-text"></div>
+    <div id="choices"></div>
+    <button onclick="logout()">Αποσύνδεση</button>
+  </main>
+
+  <!-- ✅ Τρέχουμε JS ως module -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
