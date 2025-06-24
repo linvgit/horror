@@ -34,10 +34,14 @@ function showStoryForUser(user) {
   loadStory();
 }
 
+let currentStoryData = null; // Κρατάει την ιστορία για επανεκκίνηση
+
 // Φόρτωση αρχείου ιστορίας
 async function loadStory() {
   const res = await fetch('stories/story1.json');
   const storyData = await res.json();
+  currentStoryData = storyData;
+
 
   document.getElementById('story-title').textContent = storyData.title;
   showChapter(storyData, "1");
@@ -74,4 +78,10 @@ window.logout = function logout() {
 // 🔁 Event listener αφού φορτώσει το DOM
 window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('login-button').addEventListener('click', login);
+  document.getElementById('restart-button').addEventListener('click', () => {
+  if (currentStoryData) {
+    showChapter(currentStoryData, "1");
+  }
+});
+
 });
