@@ -100,7 +100,7 @@ main {
   text-align: center;
 }
 
-
+@media (max-width: 600px) {
 #choices button {
   display: block;
   margin: 10px auto;
@@ -114,6 +114,7 @@ main {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
+ }
 }
 
 #choices button:hover {
