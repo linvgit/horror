@@ -101,10 +101,11 @@ main {
 }
 
 @media (max-width: 600px) {
-  /* Όταν πατάς το κουμπί σε κινητό */
   #choices button:active {
     transform: scale(0.96);
+    background-color: #444;
   }
+}
 #choices button {
   display: block;
   margin: 10px auto;
@@ -119,7 +120,7 @@ main {
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
  }
-}
+
 
 #choices button:hover {
   background-color: #333;
