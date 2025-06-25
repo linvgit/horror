@@ -101,6 +101,10 @@ main {
 }
 
 @media (max-width: 600px) {
+  /* Όταν πατάς το κουμπί σε κινητό */
+  #choices button:active {
+    transform: scale(0.96);
+  }
 #choices button {
   display: block;
   margin: 10px auto;
